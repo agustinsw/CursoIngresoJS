@@ -10,5 +10,51 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+     var lampara = 35;
+     var cantLampara = parseInt(document.getElementById("Cantidad").value);
+     var precio = parseInt(lampara * cantLampara);
+     var precioCdescuento;
+     var marca = document.getElementById("Marca").value;
+     var impuesto = precioCdescuento * 0.10;
+
+     if (cantLampara >= 6 && precio < (120 / 1.10))
+     {
+         precioCdescuento = precio - (precio * 0.5);
+         alert(precioCdescuento);
+     } else if (cantLampara == 5 && marca == "ArgentinaLuz" )
+     {
+        precioCdescuento = (precio) - (precio * 0.4);
+        alert(precioCdescuento);
+     } else if (cantLampara == 5)
+     {
+        precioCdescuento = (precio) - (precio * 0.3);
+        alert(precioCdescuento);
+     } else if (cantLampara == 4 && (marca == "ArgentinaLuz" || marca == "FelipeLamparas"))
+     {
+        precioCdescuento = (precio) - (precio * 0.25);
+        alert(precioCdescuento);
+     } else if (cantLampara == 4)
+     {
+        precioCdescuento = (precio) - (precio * 0.2);
+        alert(precioCdescuento);
+     } else if (cantLampara == 3 && marca == "ArgentinaLuz" )
+     {
+        precioCdescuento = (precio) - (precio * 0.15);
+        alert(precioCdescuento);
+     } else if (cantLampara == 3 && marca == "FelipeLamparas" )
+     {
+        precioCdescuento = (precio) - (precio * 0.1);
+        alert(precioCdescuento);
+    }  else if (cantLampara == 3 && (marca != "ArgentinaLuz" && marca != "FelipeLamparas") )
+    {
+       precioCdescuento = (precio) - (precio * 0.05);
+       alert(precioCdescuento);
+    } 
+    if (precio >= (120 / 1.10))
+    {
+        precioCdescuento = precio - (precio * 0.5);
+        precioCdescuento = precioCdescuento + impuesto;
+        alert("IIBB Usted pago " + precioCdescuento + ", siendo " + impuesto + " el impuesto que se pagó.");
+    }
+
 }
