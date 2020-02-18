@@ -22,6 +22,7 @@ switch (mesDelAño) {
 alert(mensaje);
 
 
+} 
 
 
-}//FIN DE LA FUNCIÓN
+

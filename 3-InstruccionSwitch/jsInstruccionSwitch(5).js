@@ -19,5 +19,5 @@ laHora = parseInt(laHora);
 	
 
 
-
+//lala
 }//FIN DE LA FUNCIÓN
