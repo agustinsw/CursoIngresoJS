@@ -1,8 +1,12 @@
 function mostrar()
 {
 	var numeroUno;
+	var numeroDos;
+	var numeroTres;
+	var numeroCuatro;
+	var numeroCinco;
 	var contador=0;
-	var acumulador=numeroUno + numeroDos + numeroTres + numeroCuatro + numeroCinco;
+	
 
 	numeroUno = prompt("Ingrese el primer numero");
 	numeroUno = parseInt(numeroUno);
@@ -14,6 +18,9 @@ function mostrar()
 	numeroCuatro = parseInt(numeroCuatro);
 	numeroCinco = prompt("Ingrese el quinto numero");
 	numeroCinco = parseInt(numeroCinco);
+
+	var acumulador=numeroUno + numeroDos + numeroTres + numeroCuatro + numeroCinco;
+	
 
 
 document.getElementById('suma').value=acumulador;
