@@ -9,8 +9,11 @@ function mostrar()
             numero = parseInt(numero);
     }
 
-    for (var contador = 1; contador < numero; contador += 2) {
-        alert(contador + 1);
+    for (var contadorPares = 0; contadorPares <= numero; contadorPares += 2) {
+        alert(contadorPares);
+        if (contadorPares >= numero){
+            alert("Se encontraron " + Math.round((contadorPares / 2)) + " pares");
+        }
 
     }
 //TERMINAR!
